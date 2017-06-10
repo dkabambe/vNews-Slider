@@ -1,0 +1,32 @@
+/******* Vertical News Display *****************/
+
+.vnWrap {
+    margin: 0;
+    padding: 0;
+}
+.vnHeader {
+    padding: 10px 1%;
+    margin: 0px;
+    cursor: pointer;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 5px;
+    color: #000066;
+}
+.vnHeader.vnSelected {
+    background-color: #eeeeee;
+}
+.vnHeader:hover {
+    background-color: #eeeeff;    
+}
+
+.vnContent {
+    border-radius: 5px;
+    background-color: #eeeeee;
+    padding: 5px 1%;
+    margin: 0;
+}
+.vnDate {
+    color: #000000;
+    font-size: 80%;
+}

@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>vNews Demo | Author: Dzinja Kabambe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-ui.vnews.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.vnews.css" />
+    <link rel="stylesheet" href="css/jquery-ui.vnews.theme.css" />
+
+    <link rel="stylesheet" href="css/vNews-demo.min.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#news_reel").vNews({ speed: 10000, selected: 0 });
+        });
+
+    </script>
+</head>
+	
+<body>
+<h1>vNews Demo</h1>
+<div id="news_reel">
+
+    <h4 date="2017-06-11 12:00:00">Initial Release</h4>
+    <div>
+        <p>
+            This is my first publically released JQuery module, as I needed a simple and easy news ticker to fit in with a website I'm developing for a local charity I work with. As I couldn't find what I needed online, I decided to have a go at coding one myself.
+        </p>
+        <p>
+            I'll admit to be heavily influenced by the design of <a href="https://github.com/impressivewebs">impressivewebs</a>' <a href="https://www.impressivewebs.com/demo-files/vertical-news-slider/">Vertical News Slider</a>, as it fitted what I had in mind visually. However, I had a couple of key requirements which led to me coding something myself
+            <ul>
+                <li>I wanted a JQuery compatible module to make it easy for me to reuse the slider across my site (and on others!)</li>
+                <li>I needed something which would work with a (Header-News) (Header-News) HTML layout, so that the page would still make logical sense to readers viewing the site without javascript</li>
+            </ul>
+        </p>
+    </div>
+
+    <h4>Customisable Ticker</h4>
+    <div>
+        <p>Very straightforward to get going, and customisable use of tags to fit in with site's existing layout.</p>
+        <p>You can also change the speed at which the slider switches to the next item, or turn that off completely.</p>
+        <p>The code can be as simple as:</p>
+        HTML:
+        <code>
+        &lt;div id="myID"&gt;
+        <br>&nbsp;&nbsp;&lt;h4&gt;Title One&lt;/h4&gt;
+        <br>&nbsp;&nbsp;&lt;div&gt;Content One&lt;/div&gt;
+        <br>&nbsp;&nbsp;&lt;h4&gt;Title Two&lt;/h4&gt;
+        <br>&nbsp;&nbsp;&lt;div&gt;Content Two&lt;/div&gt;
+        <br>&lt;/div&gt;
+        </code>
+        <p>JS:
+        <code>
+        $("#myID").vNews();
+        </code>
+    </div>
+
+    <h4>Hover over here</h4>
+    <div>
+        <p>When you hover over a header item, it will display the relevant content and go back to where you were when you leave.</p>
+        <p>Hovering over a content item will freeze that content item in place (stop the timer) until you leave.</p>
+    </div>
+
+    <h4>Click here</h4>
+    <div>
+        Clicking on an item will switch to that item, and continue the timer (if set) from there.
+        <p>
+        <table border=1>
+        <tbody>
+            <tr>
+                <td>Row 1</td>
+                <td>Cell One</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td><strong>TWO</strong></td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td><em>As you can see can include your own HTML in the content sections!</em></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+    <h4>Options</h4>
+    <div>
+        <h4>headerTag: 'h4'</h4>
+        HTML tag which defines the header.
+        
+        <h4>dateAttr: 'date'</h4>
+        Atrribute on the header HTML tag which contains timestamp for the news item. 
+        
+        <h4>contentTag: 'div'</h4>
+        HTML tag which defines the content.
+        
+        <h4>headerClass: ''</h4>
+        Reserved for future use, (to enable users to apply custom styles to header items)
+        
+        <h4>contentClass: ''</h4>
+        Reserved for future use, (to enable users to apply custom styles to content items)
+        
+        <h4>dateFormat: 'd M yy'</h4>
+        Output format for the date, (using <a href="http://api.jqueryui.com/datepicker/#utility-formatDate">JQuery UI Datepicker formats</a>).
+        
+        <h4>selected: 0</h4>
+        Which news item should be selected on start-up, (esp. useful when ticker set to static via speed: 0)
+
+        <h4>speed: 5000</h4>
+        Time (in ms) between switching slides. Set to 0 to turn off the ticker and have static display
+    </div>
+
+    <h4>Future</h4>
+    <div>
+        I never really intended to release this publically, but given that I have I am now planning to make some alterations. In particular:
+        <ul>
+            <li><em>Make JQuery-UI.Datepicker reliance optional (currently only used to format dates)*</em></li>
+            <li>Tidy up code / make it W3C compliant / put in relevant error checking etc..</li>
+            <li>Create some methods to control ticker programatically</li>
+            <li>Put in transition options for switching between items.</li>
+            <li>Documentation / Comments !!</li>
+        </ul>
+        Beyond that will mostly just depend on time, and whether anyone besides myself ends up using this and what they want to see!
+        <p>*Given my primary intention was to make a very lightweight slider this is my first goal. I was already using JQuery UI in my site, so didn't matter there but for portability this is my primary aim.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
