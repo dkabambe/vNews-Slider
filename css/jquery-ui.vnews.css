@@ -1,0 +1,25 @@
+/******* Vertical News Display *****************/
+
+.vnWrap {
+    position: relative;
+    width: 100%;
+}
+.vnWrap:after {
+    clear: both;
+}
+.vnHeaderWrap {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.vnHeader {
+    display: block;
+    width: 36%;
+}
+.vnContent {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 60%;
+}
