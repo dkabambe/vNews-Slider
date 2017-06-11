@@ -9,15 +9,15 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-    <script type="text/javascript" src="js/jquery-ui.vnews.js"></script>
-    <link rel="stylesheet" href="css/jquery-ui.vnews.css" />
-    <link rel="stylesheet" href="css/jquery-ui.vnews.theme.css" />
+    <script type="text/javascript" src="js/jquery.vnews.js"></script>
+    <link rel="stylesheet" href="css/jquery.vnews.css" />
+    <link rel="stylesheet" href="css/jquery.vnews.theme.css" />
 
     <link rel="stylesheet" href="css/vNews-demo.min.css" />
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#news_reel").vNews({ speed: 10000, selected: 0 });
+            $("#news_reel").vNews({ speed: 6000, selected: 0 });
         });
 
     </script>
@@ -25,7 +25,12 @@
 	
 <body>
 <h1>vNews Demo</h1>
-<div id="news_reel">
+    <div class="center">
+        <a href="https://github.com/dkabambe/vNews-Slider" class="button">View on Github</a>
+        <a href="../" class="button">Other Projects</a>
+    </div>
+    <p>
+    <div id="news_reel">
 
     <h4 date="2017-06-11 12:00:00">Initial Release</h4>
     <div>
@@ -41,10 +46,11 @@
         </p>
     </div>
 
-    <h4>Customisable Ticker</h4>
+    <h4>Simple Installation</h4>
     <div>
-        <p>Very straightforward to get going, and customisable use of tags to fit in with site's existing layout.</p>
-        <p>You can also change the speed at which the slider switches to the next item, or turn that off completely.</p>
+        <p>Very straightforward to get going - simply include jQuery/jQuery-UI (datepicker), then include this JS file.
+        <p>You can then customisable use of tags to fit in with site's existing layout.
+        You can also change the speed at which the slider switches to the next item, or turn that off completely.</p>
         <p>The code can be as simple as:</p>
         HTML:
         <code>
@@ -93,12 +99,18 @@
     <div>
         <h4>headerTag: 'h4'</h4>
         HTML tag which defines the header.
+
+        <h4>headerWidth: ''</h4>
+        Reserved for future use, (to enable user to define width of header boxes)
         
         <h4>dateAttr: 'date'</h4>
         Atrribute on the header HTML tag which contains timestamp for the news item. 
         
         <h4>contentTag: 'div'</h4>
         HTML tag which defines the content.
+        
+        <h4>contentWidth: ''</h4>
+        Reserved for future use, (to enable user to define width of content box)
         
         <h4>headerClass: ''</h4>
         Reserved for future use, (to enable users to apply custom styles to header items)
@@ -120,16 +132,17 @@
     <div>
         I never really intended to release this publically, but given that I have I am now planning to make some alterations. In particular:
         <ul>
-            <li><em>Make JQuery-UI.Datepicker reliance optional (currently only used to format dates)*</em></li>
-            <li>Tidy up code / make it W3C compliant / put in relevant error checking etc..</li>
+            <li><em>Make JQuery-UI.Datepicker reliance optional (currently only used to format dates)<sup>*</sup></em></li>
+            <li>Tidy up code (naming conventions, error checking etc..)</li>
+            <li>Further options (customisable width, #items displayed, maxHeight control)</li>
             <li>Create some methods to control ticker programatically</li>
             <li>Put in transition options for switching between items.</li>
             <li>Documentation / Comments !!</li>
         </ul>
         Beyond that will mostly just depend on time, and whether anyone besides myself ends up using this and what they want to see!
-        <p>*Given my primary intention was to make a very lightweight slider this is my first goal. I was already using JQuery UI in my site, so didn't matter there but for portability this is my primary aim.</p>
+        <p><sup>*</sup>Given my primary intention was to make a very lightweight slider this is my first goal. I was already using JQuery UI in my site, so didn't matter there but for portability this is my primary aim.</p>
     </div>
-
+    
 </div>
 
 </body>
