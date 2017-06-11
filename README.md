@@ -17,28 +17,30 @@ Then simply link to the vNews javascript and css, (Less than 3k minified), and i
 &lt;html&gt;
 &lt;head&gt;
 	...
-	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;
-	&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"&gt;
 
-	&lt;script src="jquery.vNews.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" href="css/jquery.vnews.css" /&gt;
+    &lt;link rel="stylesheet" href="css/jquery.vnews.theme.css" /&gt; &lt;!-- Optional --&gt;
+    &lt;script src="jquery.vNews.js"&gt;&lt;/script&gt;
 	
-	&lt;script&gt;
-		$(document).ready( function() {
-			$("#myID").vNews({
-				option1: value1,
-				option2: value2
-			}
-		});
-	&lt;/script&gt;
+    &lt;script&gt;
+	$(document).ready( function() {
+	    $("#myID").vNews({
+		option1: value1,
+		option2: value2
+		};
+	});
+    &lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
 ...
 &lt;div id="myID"&gt;
-	&lt;h4 date="2017-06-15 12:30"&gt;Title One&lt;/h4&gt;
-	&lt;div&gt;Content One&lt;/div&gt;
-	&lt;h4&gt;Title Two&lt;/h4&gt;
-	&lt;div&gt;Content Two&lt;/div&gt;
+    &lt;h4 date="2017-06-15 12:30"&gt;Title One&lt;/h4&gt;
+    &lt;div&gt;Content One&lt;/div&gt;
+    &lt;h4&gt;Title Two&lt;/h4&gt;
+    &lt;div&gt;Content Two&lt;/div&gt;
 &lt;/div&gt;
 ...
 &lt;/body&gt;
