@@ -1,14 +1,14 @@
-#vNews Slider
+# vNews Slider
 vNews Slider is my first jQuery add-on which I coded to fill a gap I had whilst designing a website for a local charity. It's functional, though I haven't tested it fully.
 
 It converts a standard Header - Content - Header - Content flat layout into a list of header links on the left with a content pane to the right. Unlike some other slider modules, this means your site will retain a natural reading flow should the user not have javascript.
 
 It can automatically scroll through the content, (using customisable CSS styles to highlight current header item), or you can turn this off and leave it to the user to switch bewteen panes. When users hover over items it will stop the scrolling and just show the item in focus.
 
-##Demo
+## Demo
 See http://web.kabambe.uk/vNews
 
-##Installing vNews Slider
+## Installing vNews Slider
 vNews is currently reliant on jQuery and jQuery UI (just the datepicker component) so link to these scripts either locally or through a code warehouse. [I hope to remove the jQuery-UI dependency soon]
 
 Then simply link to the vNews javascript and css, (Less than 3k minified), and initialise your containing object.
@@ -45,14 +45,14 @@ Then simply link to the vNews javascript and css, (Less than 3k minified), and i
 &lt;/html&gt;
 </code></pre>
 
-##Customising
+## Customising
 There are several options available to customise the slider such as which HTML tags you use for the header and content information, (as  long as they're different), the speed of the ticker (or whether to turn off). The demo file in the download contains the relevant information.
 
-##Future Development
+## Future Development
 
 If any of you do find this useful I am open to ideas about future development, though my aim is to keep this as lightweight as possible, (hence my desire to remove jQuery UI dependency or at least make it optional). Again, within the [demo file](web.kabambe.uk/vNews) you can find more information about my thoughts so far.
 
-##Usage (MIT License)
+## Usage (MIT License)
 
 Copyright (c) 2017 dkabambe
 
