@@ -17,8 +17,8 @@ Then simply link to the vNews javascript and css, (Less than 3k minified), and i
 &lt;html&gt;
 &lt;head&gt;
 	...
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"&gt;&lt;/script&gt;
 
     &lt;link rel="stylesheet" href="css/jquery.vnews.css" /&gt;
     &lt;link rel="stylesheet" href="css/jquery.vnews.theme.css" /&gt; &lt;!-- Optional --&gt;
