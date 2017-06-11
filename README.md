@@ -50,7 +50,7 @@ There are several options available to customise the slider such as which HTML t
 
 ## Future Development
 
-If any of you do find this useful I am open to ideas about future development, though my aim is to keep this as lightweight as possible, (hence my desire to remove jQuery UI dependency or at least make it optional). Again, within the [demo file](web.kabambe.uk/vNews) you can find more information about my thoughts so far.
+If any of you do find this useful I am open to ideas about future development, though my aim is to keep this as lightweight as possible, (hence my desire to remove jQuery UI dependency or at least make it optional). Again, within the [demo file](http://web.kabambe.uk/vNews) you can find more information about my thoughts so far.
 
 ## Usage (MIT License)
 
